@@ -1,11 +1,16 @@
 spring:
   jpa:
     generate-ddl: true
-    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: jdbc:mysql://localhost:3306/movies?useSSL=false
-    username: root
-
+    url: jdbc:postgresql://localhost:5432/movies?useSSL=false
+    username: Aravind
+    password:
   mvc.view:
     prefix: /WEB-INF/
     suffix: .jsp
+s3:
+  endpointUrl: http://127.0.0.1:9000
+  accessKey: X206EYHRWD564U0DL368
+  secretKey: thJYdegaCNLeNtdx852EUoQ+UPLIAUxzG+S76uLF
+  bucketName: moviefun
